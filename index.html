@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>three.js WebGL - Build Your ISO Graphics Quickly</title>
+    <title>Build your ISO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+
     <style>
         body {
             background-color: #f0f0f0;
@@ -15,6 +18,8 @@
             align-items: center;
             justify-content: center;
         }
+
+
         a {
             color: #08f;
         }
@@ -83,16 +88,17 @@
 
 		<!-- Import maps polyfill -->
 		<!-- Remove this when import maps will be widely supported -->
-		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 
-		<script type="importmap">
-			{
-				"imports": {
-					"three": "../build/three.module.js",
-					"three/addons/": "./jsm/"
-				}
-			}
-		</script>
+        <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+            }
+        }
+        </script>
 
 		<script type="module">
 
@@ -202,41 +208,56 @@
 			}
 
 			document.getElementById('addXLine').addEventListener('click', function() {
-				const xPoints = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(10, 10, 0)];
-				const xGeometry = new THREE.BufferGeometry().setFromPoints(xPoints);
-				const xLine = new THREE.Line(xGeometry, material);
-				scene.add(xLine);
-				objects.push(xLine);
-				render();
-			});
+                const xPoints = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(10, 10, 0)];
+                const xLineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });  // Create a new material for this line
+                const xGeometry = new THREE.BufferGeometry().setFromPoints(xPoints);
+                const xLine = new THREE.Line(xGeometry, xLineMaterial);  // Use the specific material
+                scene.add(xLine);
+                objects.push(xLine);
+                updateControls();
+                render();
+            });
 
-			document.getElementById('addYLine').addEventListener('click', function() {
-				const yPoints = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(-10, 10, 0)];
-				const yGeometry = new THREE.BufferGeometry().setFromPoints(yPoints);
-				const yLine = new THREE.Line(yGeometry, material);
-				scene.add(yLine);
-				objects.push(yLine);
-				render();
-			});
+            document.getElementById('addYLine').addEventListener('click', function() {
+                const yPoints = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(-10, 10, 0)];
+                const yLineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });  // Create a new material for this line
+                const yGeometry = new THREE.BufferGeometry().setFromPoints(yPoints);
+                const yLine = new THREE.Line(yGeometry, yLineMaterial);  // Use the specific material
+                scene.add(yLine);
+                objects.push(yLine);
+                updateControls();
+                render();
+            });
 
-			document.getElementById('addZLine').addEventListener('click', function() {
-				const zPoints = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 10, 0)];
-				const zGeometry = new THREE.BufferGeometry().setFromPoints(zPoints);
-				const zLine = new THREE.Line(zGeometry, material);
-				scene.add(zLine);
-				objects.push(zLine);
-				render();
-			});
+            document.getElementById('addZLine').addEventListener('click', function() {
+                const zPoints = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 10, 0)];
+                const zLineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });  // Create a new material for this line
+                const zGeometry = new THREE.BufferGeometry().setFromPoints(zPoints);
+                const zLine = new THREE.Line(zGeometry, zLineMaterial);  // Use the specific material
+                scene.add(zLine);
+                objects.push(zLine);
+                updateControls();
+                render();
+            });
 
 			document.getElementById('deleteLine').addEventListener('click', function() {
-                if (selectedObject) {
-                    scene.remove(selectedObject);
-                    objects = objects.filter(obj => obj !== selectedObject);
-                    selectedObject = null;
-                    updateControls();
-                    render();
+            if (selectedObject) {
+                // Remove from scene
+                scene.remove(selectedObject);
+                // Remove from objects array
+                const index = objects.indexOf(selectedObject);
+                if (index > -1) {
+                    objects.splice(index, 1);
                 }
-            });
+                // Update controls with new objects array
+                updateControls();
+                // Clear selection
+                selectedObject = null;
+                // Render the scene
+                render();
+            }
+        });
+
 
 
             document.getElementById('addRectangle').addEventListener('click', addRectangle);
@@ -251,7 +272,8 @@
                 rectShape.lineTo(0, 0);
 
                 const rectGeom = new THREE.BufferGeometry().setFromPoints(rectShape.getPoints());
-                const rectLine = new THREE.LineLoop(rectGeom, material);
+                const rectLineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });  // Create a new material for this shape
+                const rectLine = new THREE.LineLoop(rectGeom, rectLineMaterial);  // Use the specific material
                 scene.add(rectLine);
                 objects.push(rectLine);
                 updateControls();
@@ -266,7 +288,8 @@
                 arrow.lineTo(1.25, -2.5);
                 arrow.lineTo(0, 0);
                 const arrowGeom = new THREE.BufferGeometry().setFromPoints(arrow.getPoints());
-                const arrowLine = new THREE.LineLoop(arrowGeom, material);
+                const arrowLineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });  // Create a new material for this shape
+                const arrowLine = new THREE.LineLoop(arrowGeom, arrowLineMaterial);  // Use the specific material
                 scene.add(arrowLine);
                 objects.push(arrowLine);
                 updateControls();
@@ -299,68 +322,54 @@
 
 			}
 
-			function onClick( event ) {
+            
+
+			function onClick(event) {
                 event.preventDefault();
 
-                mouse.x = ( event.clientX / container.clientWidth ) * 2 - 1;
-                mouse.y = - ( event.clientY / container.clientHeight ) * 2 + 1;
+                const rect = container.getBoundingClientRect();
+                mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+                mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
 
-                raycaster.setFromCamera( mouse, camera );
+                raycaster.setFromCamera(mouse, camera);
 
-                const intersections = raycaster.intersectObjects( objects, true );
+                const intersections = raycaster.intersectObjects(objects, true);
 
-                if ( intersections.length > 0 ) {
-                    let closestObject = intersections[0].object;
-                    let closestDistance = intersections[0].distance;
-                    for (let i = 1; i < intersections.length; i++) {
-                        if (intersections[i].distance < closestDistance) {
-                            closestDistance = intersections[i].distance;
-                            closestObject = intersections[i].object;
-                        }
-                    }
-                    selectedObject = closestObject;
-                }
+                if (intersections.length > 0) {
+                    const object = intersections[0].object;
 
-                if ( enableSelection === true ) {
-                    const draggableObjects = controls.getObjects();
-                    draggableObjects.length = 0;
-
-                    if ( intersections.length > 0 ) {
-                        const object = intersections[0].object;
-
-                        if (object.material && object.material.emissive) {
-                            if ( group.children.includes( object ) ) {
-                                object.material.emissive.set( 0x000000 );
-                                scene.attach( object );
-                            } else {
-                                object.material.emissive.set( 0xaaaaaa );
-                                group.attach( object );
-                            }
+                    if (object !== selectedObject) {
+                        if (selectedObject) {
+                            // Deselect the previously selected object
+                            selectedObject.material.color.set(0x0000ff);
                         }
 
-                        controls.transformGroup = true;
-                        draggableObjects.push( group );
+                        // Select the new object
+                        selectedObject = object;
+                        selectedObject.material.color.set(0xffff00);
+                    } else {
+                        // Deselect the current selected object
+                        selectedObject.material.color.set(0x0000ff);
+                        selectedObject = null;
                     }
 
-                    if ( group.children.length === 0 ) {
-                        controls.transformGroup = false;
-                        draggableObjects.push( ...objects );
-                    }
+                    render();
                 }
-
-                render();
             }
 
+
+
             function updateControls() {
-                // If controls already exists, remove its event listener
                 if (controls) {
-                    controls.removeEventListener('drag', render);
+                    // Detach old controls
+                    controls.dispose();
                 }
 
                 // Create new controls with updated objects
                 controls = new DragControls(objects, camera, renderer.domElement);
                 controls.addEventListener('drag', render);
             }
+
 
 
 
@@ -375,3 +384,4 @@
 
 	</body>
 </html>
+
